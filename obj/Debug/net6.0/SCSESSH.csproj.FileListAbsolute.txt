@@ -1,0 +1,12 @@
+/home/ferret/GIT/Scorpion-HTTP-Sessions/obj/Debug/net6.0/SCSESSH.csproj.AssemblyReference.cache
+/home/ferret/GIT/Scorpion-HTTP-Sessions/obj/Debug/net6.0/SCSESSH.GeneratedMSBuildEditorConfig.editorconfig
+/home/ferret/GIT/Scorpion-HTTP-Sessions/obj/Debug/net6.0/SCSESSH.AssemblyInfoInputs.cache
+/home/ferret/GIT/Scorpion-HTTP-Sessions/obj/Debug/net6.0/SCSESSH.AssemblyInfo.cs
+/home/ferret/GIT/Scorpion-HTTP-Sessions/obj/Debug/net6.0/SCSESSH.csproj.CoreCompileInputs.cache
+/home/ferret/GIT/Scorpion-HTTP-Sessions/bin/Debug/net6.0/SCSESSH.deps.json
+/home/ferret/GIT/Scorpion-HTTP-Sessions/bin/Debug/net6.0/SCSESSH.dll
+/home/ferret/GIT/Scorpion-HTTP-Sessions/bin/Debug/net6.0/ref/SCSESSH.dll
+/home/ferret/GIT/Scorpion-HTTP-Sessions/bin/Debug/net6.0/SCSESSH.pdb
+/home/ferret/GIT/Scorpion-HTTP-Sessions/obj/Debug/net6.0/SCSESSH.dll
+/home/ferret/GIT/Scorpion-HTTP-Sessions/obj/Debug/net6.0/ref/SCSESSH.dll
+/home/ferret/GIT/Scorpion-HTTP-Sessions/obj/Debug/net6.0/SCSESSH.pdb
