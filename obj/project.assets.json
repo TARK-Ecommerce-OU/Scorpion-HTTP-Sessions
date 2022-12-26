@@ -1,11 +1,104 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "EasyEncrypt/2.2.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/EasyEncrypt.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/EasyEncrypt.dll": {}
+        }
+      },
+      "consolereadwrite/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/consolereadwrite.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/consolereadwrite.dll": {}
+        }
+      },
+      "Scorpion-Default-Paths/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Scorpion-Default-Paths.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Scorpion-Default-Paths.dll": {}
+        }
+      },
+      "scorpion_network_driver/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Scorpion-Default-Paths": "1.0.0",
+          "Squirrel-AES": "1.0.0",
+          "consolereadwrite": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/scorpion_network_driver.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/scorpion_network_driver.dll": {}
+        }
+      },
+      "Squirrel-AES/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "EasyEncrypt": "2.2.1"
+        },
+        "compile": {
+          "bin/placeholder/Squirrel-AES.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Squirrel-AES.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "EasyEncrypt/2.2.1": {
+      "sha512": "Dq7ofkt2CoKPnazhDWB7nEsLWdy0i3NsH9bykH85pp+U1k3j9cpqjIcBFgEDF1/qvO3HtTj+E9zMjhq+CPlNKg==",
+      "type": "package",
+      "path": "easyencrypt/2.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "easyencrypt.2.2.1.nupkg.sha512",
+        "easyencrypt.nuspec",
+        "lib/netstandard2.0/EasyEncrypt.dll"
+      ]
+    },
+    "consolereadwrite/1.0.0": {
+      "type": "project",
+      "path": "../Squirrel_Project/Squirrel-Console-Read-Write/consolereadwrite.csproj",
+      "msbuildProject": "../Squirrel_Project/Squirrel-Console-Read-Write/consolereadwrite.csproj"
+    },
+    "Scorpion-Default-Paths/1.0.0": {
+      "type": "project",
+      "path": "../Squirrel_Project/Squirrel-Default-Paths/Scorpion-Default-Paths.csproj",
+      "msbuildProject": "../Squirrel_Project/Squirrel-Default-Paths/Scorpion-Default-Paths.csproj"
+    },
+    "scorpion_network_driver/1.0.0": {
+      "type": "project",
+      "path": "../Scorpion-Network-Driver/scorpion_network_driver/scorpion_network_driver.csproj",
+      "msbuildProject": "../Scorpion-Network-Driver/scorpion_network_driver/scorpion_network_driver.csproj"
+    },
+    "Squirrel-AES/1.0.0": {
+      "type": "project",
+      "path": "../Squirrel_Project/Squirrel-AES/Squirrel-AES.csproj",
+      "msbuildProject": "../Squirrel_Project/Squirrel-AES/Squirrel-AES.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "scorpion_network_driver >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "/home/ferret/.nuget/packages/": {}
@@ -31,7 +124,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/home/ferret/GIT/Scorpion-Network-Driver/scorpion_network_driver/scorpion_network_driver.csproj": {
+              "projectPath": "/home/ferret/GIT/Scorpion-Network-Driver/scorpion_network_driver/scorpion_network_driver.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -49,7 +146,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -58,7 +156,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.100/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/home/ferret/.dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
       }
     }
   }
